@@ -38,7 +38,7 @@
 		D93B5864226F44C900075035 = {
 			isa = PBXGroup;
 			children = (
-				D93B586F226F44C900075035 /* GravityButtons */,
+				D93B586F226F44C900075035 /* GravityViews */,
 				D93B586E226F44C900075035 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,7 +51,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D93B586F226F44C900075035 /* GravityButtons */ = {
+		D93B586F226F44C900075035 /* GravityViews */ = {
 			isa = PBXGroup;
 			children = (
 				D93B5870226F44C900075035 /* AppDelegate.swift */,
@@ -61,7 +61,7 @@
 				D93B5879226F44CB00075035 /* LaunchScreen.storyboard */,
 				D93B587C226F44CB00075035 /* Info.plist */,
 			);
-			path = GravityButtons;
+			path = GravityViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,7 +284,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G82CYC7M5V;
-				INFOPLIST_FILE = GravityButtons/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GravityViews/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +302,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G82CYC7M5V;
-				INFOPLIST_FILE = GravityButtons/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GravityViews/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

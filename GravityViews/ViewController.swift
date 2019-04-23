@@ -13,15 +13,25 @@ class ViewController: UIViewController {
     var views = [UIView]()
     var animator: UIDynamicAnimator!
     
+    var timer = Timer()
+    
     
     fileprivate func createGravityViews() {
-        for _ in 50...500 {
+      
+        
+        timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(dropViews), userInfo: nil, repeats: true)
+       
+    }
+    
+    @objc func dropViews() {
+        
+        for _ in 5...15 {
             let view = UIView()
             view.frame = CGRect(x: Int.random(in: 0...Int(self.view.frame.size.width)), y: Int.random(in: 0...Int(self.view.frame.size.height)), width: 20, height: 20)
             view.layer.cornerRadius = 0.5 * view.bounds.size.width
             view.backgroundColor = UIColor.random
             view.layer.borderColor = UIColor.random.cgColor
-            view.layer.borderWidth = 2
+            view.layer.borderWidth = CGFloat(Int.random(in: 1...4))
             views.append(view)
         }
         
@@ -30,9 +40,9 @@ class ViewController: UIViewController {
         }
         
         animator = UIDynamicAnimator(referenceView: self.view)
-        
         let gravity = UIGravityBehavior(items: views)
-        gravity.magnitude = 1
+        gravity.angle = CGFloat(Int.random(in: 0...100))
+        gravity.magnitude = CGFloat(Float.random(in: 0.9...1))
         animator.addBehavior(gravity)
     }
     
@@ -45,17 +55,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-    @IBAction func addGravityViews(_ sender: UIBarButtonItem) {
-        createGravityViews()
-    }
 }
 
 extension UIColor {
     static var random: UIColor {
-        return UIColor(red: .random(in: 0...1),
-                       green: .random(in: 0...1),
-                       blue: .random(in: 0...1),
-                       alpha: 1.0)
+        return UIColor(red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1), alpha: 1.0)
     }
 }
