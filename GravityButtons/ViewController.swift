@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     
     
     fileprivate func createGravityViews() {
-        for _ in 500...5000 {
+        for _ in 50...500 {
             let view = UIView()
             view.frame = CGRect(x: Int.random(in: 0...Int(self.view.frame.size.width)), y: Int.random(in: 0...Int(self.view.frame.size.height)), width: 20, height: 20)
             view.layer.cornerRadius = 0.5 * view.bounds.size.width
