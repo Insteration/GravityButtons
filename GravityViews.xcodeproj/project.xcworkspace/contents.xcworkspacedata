@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:GravityButtons.xcodeproj">
+      location = "self:/Users/johansson/Desktop/GravityButtons/GravityViews.xcodeproj">
    </FileRef>
 </Workspace>

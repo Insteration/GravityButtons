@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D93B586D226F44C900075035 /* GravityButtons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GravityButtons.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D93B586D226F44C900075035 /* GravityViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GravityViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D93B5870226F44C900075035 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D93B5872226F44C900075035 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D93B5875226F44C900075035 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		D93B586E226F44C900075035 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D93B586D226F44C900075035 /* GravityButtons.app */,
+				D93B586D226F44C900075035 /* GravityViews.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,9 +67,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D93B586C226F44C900075035 /* GravityButtons */ = {
+		D93B586C226F44C900075035 /* GravityViews */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D93B587F226F44CB00075035 /* Build configuration list for PBXNativeTarget "GravityButtons" */;
+			buildConfigurationList = D93B587F226F44CB00075035 /* Build configuration list for PBXNativeTarget "GravityViews" */;
 			buildPhases = (
 				D93B5869226F44C900075035 /* Sources */,
 				D93B586A226F44C900075035 /* Frameworks */,
@@ -79,9 +79,9 @@
 			);
 			dependencies = (
 			);
-			name = GravityButtons;
+			name = GravityViews;
 			productName = GravityButtons;
-			productReference = D93B586D226F44C900075035 /* GravityButtons.app */;
+			productReference = D93B586D226F44C900075035 /* GravityViews.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +99,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D93B5868226F44C900075035 /* Build configuration list for PBXProject "GravityButtons" */;
+			buildConfigurationList = D93B5868226F44C900075035 /* Build configuration list for PBXProject "GravityViews" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +112,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D93B586C226F44C900075035 /* GravityButtons */,
+				D93B586C226F44C900075035 /* GravityViews */,
 			);
 		};
 /* End PBXProject section */
@@ -289,7 +289,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = JG.GravityButtons;
+				PRODUCT_BUNDLE_IDENTIFIER = JG.GravityViews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,7 +307,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = JG.GravityButtons;
+				PRODUCT_BUNDLE_IDENTIFIER = JG.GravityViews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -317,7 +317,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D93B5868226F44C900075035 /* Build configuration list for PBXProject "GravityButtons" */ = {
+		D93B5868226F44C900075035 /* Build configuration list for PBXProject "GravityViews" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D93B587D226F44CB00075035 /* Debug */,
@@ -326,7 +326,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D93B587F226F44CB00075035 /* Build configuration list for PBXNativeTarget "GravityButtons" */ = {
+		D93B587F226F44CB00075035 /* Build configuration list for PBXNativeTarget "GravityViews" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D93B5880226F44CB00075035 /* Debug */,
