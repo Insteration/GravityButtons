@@ -15,9 +15,8 @@ class ViewController: UIViewController {
     
     var timer = Timer()
     
-    
     fileprivate func createGravityViews() {
-      
+
         
         timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(dropViews), userInfo: nil, repeats: true)
        
@@ -42,23 +41,21 @@ class ViewController: UIViewController {
         animator = UIDynamicAnimator(referenceView: self.view)
         let gravity = UIGravityBehavior(items: views)
         gravity.angle = CGFloat(Int.random(in: 0...100))
-        gravity.magnitude = CGFloat(Float.random(in: 0.9...1))
+        gravity.magnitude = CGFloat(Float.random(in: 0.6...1))
         animator.addBehavior(gravity)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
         createGravityViews()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-}
-
-extension UIColor {
-    static var random: UIColor {
-        return UIColor(red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1), alpha: 1.0)
+    @IBAction func clearViewButton(_ sender: UIBarButtonItem) {
+        views = []
+        self.view.subviews.forEach({ $0.removeFromSuperview() })
     }
 }
+
